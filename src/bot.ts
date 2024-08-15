@@ -55,6 +55,14 @@ const rest: REST= new REST({ version: '10' }).setToken(DISCORD_BOT_TOKEN);
 
 
 client.once('ready', () => {
+
+    // Print env variables
+    console.log(`DISCORD_BOT_TOKEN: ${DISCORD_BOT_TOKEN}`);
+    console.log(`DISCORD_CLIENT_ID: ${DISCORD_CLIENT_ID}`);
+    console.log(`PEBBLEHOST_API_USER: ${PEBBLEHOST_API_USER}`);
+    console.log(`MULTICRAFT_API_KEY: ${MULTICRAFT_API_KEY}`);
+    console.log(`MULTICRAFT_SERVER_ID: ${MULTICRAFT_SERVER_ID}`);
+
     console.log('Bot is ready');
 });
 
